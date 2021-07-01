@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WELCOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body
+    {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url({{url_for('static',filename='images/img3.png')}});
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+h1{
+            background-color: F84D3C;
+            color: lightGreen;
+            font-size: xxx-large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3{
+            background-color: EE664B;
+            color: EEB54B;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+h4{
+            background-color: EC664B;
+            color: EPB54B;
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+</style>
+<body><center>
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">StockMarket Prediction</a>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="entry1">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Datasets
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="static/data/data1.csv">For Next Minute</a></li>
+          <li><a href="static/data/data2.csv">For Next Day</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <form action="/method" method="POST">
+        <table><tr><td><h1>Stock Price Prediction</h1></td></tr></table>
+    <table><tr><td></tr></td>
+        <tr><td><b><h3 style="color:Blue;background-color:D6EA0F;font-size:xx-large;"><center>NIFTY</center></h3></b></td></tr>
+    <tr><td></td></tr>
+        <tr><td><b><h4 style="color:white;background-color:purple;font-size:xx-large;"><center>Please Enter your Close Price</center></h4></b></td></tr>
+<tr><td><input type="number" step="0.01" name="Close Price" placeholder="Close Price" style="background-color:Thistle";>
+<table><tr><td>&emsp13;</td></tr></table>
+</td></tr><tr><td><button type="submit" class="btn btn-success"><center>FOR NEXT MINUTE</center></button></td></tr></table>
+    </form></center></body>
+</html>
